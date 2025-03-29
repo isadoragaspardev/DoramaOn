@@ -21,22 +21,27 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      background-color: #000;
+      border-radius: 10px;
+      overflow: hidden;
     }
-    video {
+    iframe {
       width: 100%;
       height: 100%;
-      object-fit: cover; /* Garante que o vídeo preencha o espaço sem distorção */
-      border-radius: 10px;
+      border: none;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <video id="video" controls autoplay>
-      <source src="https://youtu.be/y195pyaNT4o?si=ZuN2AE8xdWwnXh1Z" type="video/mp4">
-      Seu navegador não suporta o elemento de vídeo.
-    </video>
+    <!-- Incorporando o vídeo do YouTube com iframe -->
+    <iframe
+      src="https://www.youtube.com/embed/y195pyaNT4o?autoplay=1"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
   </div>
 
 </body>
